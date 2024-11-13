@@ -128,8 +128,5 @@ This project uses GitHub Actions for CI/CD. Each push triggers automated tests, 
 ### GitHub Actions Workflow Configuration
 The `.github/workflows/django.yml` file configures automated testing for each push or pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
