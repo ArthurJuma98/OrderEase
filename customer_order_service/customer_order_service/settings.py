@@ -17,7 +17,7 @@ import dotenv
 dotenv.load_dotenv()
 
 AFRICASTALKING_USERNAME = os.getenv("Arthur Ochilo")
-AFRICASTALKING_API_KEY = os.getenv("8b7f65a2f13c4e02a0b9d1e7f3b5d7c1")
+AFRICASTALKING_API_KEY = os.getenv("8b7f65a2f13c4e0xxxxxxxxxxxxx")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
