@@ -44,7 +44,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'orders',
+    'mozilla_django_oidc',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'mozilla_django_oidc.contrib.drf.OIDCAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,10 +95,22 @@ WSGI_APPLICATION = 'customer_order_service.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Customer Order Service',
+        'USER': 'Arthur Ochilo',
+        'PASSWORD': '@shhsxxxx',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+
+# Africa's Talking Configuration
+AFRICASTALKING_USERNAME = 'Arthur Ochilo'
+AFRICASTALKING_API_KEY = 'b45ghsj6j7jxxxxxxxxxxxxxx'
+
+# OpenID Connect settings
+OIDC_RP_CLIENT_ID = '24543850abcdef'
+OIDC_RP_CLIENT_SECRET = 'YmFzZTY0c2VjcmV0MTIzNDU2Nzg5MGFiY2RlZjEyMzQ1Njc4OUFCQ0RFRkZpTktQ'
 
 
 # Password validation
