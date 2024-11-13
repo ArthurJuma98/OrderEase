@@ -1,10 +1,6 @@
-Here's a `README.md` template for your backend technical challenge project, covering setup, usage, and project details. Feel free to adjust specific project information as needed:
-
----
-
 # Customer Order Service API
 
-This project is a backend service for managing customers and orders, developed as part of a technical challenge. It is built with Python and Django, using Django REST Framework to provide RESTful API endpoints. The service handles customer data, order entries, and includes SMS notifications using Africa’s Talking API. Authentication is implemented via OpenID Connect.
+This is a backend service project for managing customers and orders, developed as part of a technical challenge. It is built with Python and Django, using Django REST Framework to provide RESTful API endpoints. The service handles customer data, order entries, and includes SMS notifications using Africa’s Talking API. Authentication is implemented via OpenID Connect.
 
 ## Table of Contents
 
